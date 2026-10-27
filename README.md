@@ -20,11 +20,3 @@ When a new `oxfmt` release should be mirrored:
 1. Update `.version` to that npm version.
 2. Keep `.pre-commit-hooks.yaml` `additional_dependencies` aligned with the same version.
 3. Push to `main` to run the workflow and open the mirror update PR.
-
-# [Sponsored By](https://oxc.rs/sponsor)
-
-<p align="center">
-  <a href="https://oxc.rs/sponsor">
-    <img src="https://raw.githubusercontent.com/oxc-project/sponsors/main/sponsors.svg" alt="Our sponsors" />
-  </a>
-</p>

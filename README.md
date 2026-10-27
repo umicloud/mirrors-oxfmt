@@ -1,6 +1,6 @@
 # mirrors-oxfmt
 
-This repository is a [pre-commit](https://pre-commit.com/) mirror for the npm package `oxfmt`.
+This repository is a [pre-commit](https://pre-commit.com/) mirror for [`oxfmt`](https://oxc.rs/docs/guide/usage/formatter.html).
 
 It is not the source code for `oxfmt`.  
 Its job is to publish and maintain the files/tags needed so users can run `oxfmt` via `pre-commit`.

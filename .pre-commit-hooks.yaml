@@ -8,3 +8,13 @@
     require_serial: false
     additional_dependencies: ["oxfmt@0.75.0"]
     minimum_pre_commit_version: '0'
+-   id: oxfmt-check
+    name: 'oxfmt-check'
+    description: 'Formatter for the JavaScript Oxidation Compiler'
+    entry: oxfmt --check --no-error-on-unmatched-pattern
+    language: node
+    'types': [text]
+    args: []
+    require_serial: false
+    additional_dependencies: ["oxfmt@0.75.0"]
+    minimum_pre_commit_version: '0'

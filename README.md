@@ -5,6 +5,27 @@ This repository is a [pre-commit](https://pre-commit.com/) mirror for the npm pa
 It is not the source code for `oxfmt`.  
 Its job is to publish and maintain the files/tags needed so users can run `oxfmt` via `pre-commit`.
 
+## Usage
+### pre-commit
+```yaml
+- repo: https://github.com/umicloud/mirrors-oxfmt
+  rev: "v0.75.0" # Use the sha / tag you want to point at
+  hooks:
+    - id: oxfmt
+    - id: oxfmt-check
+```
+
+### prek
+```toml
+[[repos]]
+repo = "https://github.com/umicloud/mirrors-oxfmt"
+rev = "v0.75.0" # Use the sha / tag you want to point at
+hooks = [
+  { id = "oxfmt" },
+  { id = "oxfmt-check" },
+]
+```
+
 ## How it works
 
 - `.github/workflows/main.yml` runs `pre-commit-mirror-maker` on pushes to `main` and opens a mirror update PR.
